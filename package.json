@@ -1,0 +1,19 @@
+{
+  "name": "simple-tailwind-starter",
+  "version": "1.0.0",
+  "description": "Simple file structure for Tailwind projects",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./css/style.css"
+  },
+  "author": "Brad Traversy",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "3.4.2",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4"
+  }
+}

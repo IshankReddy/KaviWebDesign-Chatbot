@@ -1,0 +1,909 @@
+<!doctype html>
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>KaviWebDesigns</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 z-50 shadow-md">
+      <div class="container mx-auto p-4">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div>
+            <h3 class="text-3xl font-bold text-gray-800 dark:text-white">Kavi
+              Web Designs</h3>
+          </div>
+
+          <!-- Menu Items -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#hero"
+              class="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 font-semibold transition-colors duration-200">Home</a>
+            <a
+              href="#about"
+              class="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 font-semibold transition-colors duration-200">About</a>
+            <a
+              href="#team"
+              class="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 font-semibold transition-colors duration-200">Team</a>
+            <a
+              href="#pricing"
+              class="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 font-semibold transition-colors duration-200">Pricing</a>
+            <a
+              href="#testimonial"
+              class="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 font-semibold transition-colors duration-200">Testimonial</a>
+            <a
+              href="#contact"
+              class="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 font-semibold transition-colors duration-200">Contact
+              Us</a>
+            
+            <!-- Add Desktop Theme Toggle Button -->
+            <button id="theme-toggle"
+              class="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">
+              <svg id="theme-toggle-dark-icon"
+                class="hidden w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+              </svg>
+              <svg id="theme-toggle-light-icon"
+                class="hidden w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20">
+                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile Controls -->
+          <div class="flex items-center md:hidden">
+            <!-- Hamburger Button -->
+            <button id="menu-btn"
+              class="block hamburger focus:outline-none z-50 mr-6 mt-2">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle-mobile"
+              class="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200 flex items-center justify-center h-[24px]">
+              <svg id="theme-toggle-dark-icon-mobile"
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+              </svg>
+              <svg id="theme-toggle-light-icon-mobile"
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20">
+                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="fixed inset-0 flex-col items-center justify-center hidden bg-white dark:bg-gray-800 z-40 space-y-8">
+            <a
+              href="#hero"
+              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">Home</a>
+            <a
+              href="#about"
+              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">About</a>
+            <a
+              href="#team"
+              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">Team</a>
+            <a
+              href="#pricing"
+              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">Pricing</a>
+            <a
+              href="#testimonial"
+              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">Testimonial</a>
+            <a
+              href="#contact"
+              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">Contact
+              Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section id="hero" class="pt-16">
+      <div
+        class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
+        <!-- Hero Content -->
+        <div class="container mx-auto px-4 pt-20 lg:pt-32">
+          <div class="text-center max-w-3xl mx-auto">
+            <h1
+              class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 animate-[fadeIn_1s_ease-out]">
+              Transform Your Business With Innovation
+            </h1>
+            <p
+              class="text-xl text-gray-600 dark:text-gray-300 mb-8 animate-[fadeIn_1s_ease-out_0.2s]">
+              We help businesses grow through digital transformation and
+              innovative solutions.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center animate-[fadeIn_1s_ease-out_0.4s]">
+              <a
+                href="#pricing"
+                class="inline-block bg-blue-600 dark:bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition duration-300">
+                Get Started
+              </a>
+              <a
+                href="#about"
+                class="inline-block border-2 border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-500 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white dark:hover:text-white transition duration-300">
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-5xl mx-auto px-4">
+            <div
+              class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 text-center">
+              <div
+                id="clientsCounter"
+                class="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                0+
+              </div>
+              <p class="text-gray-600 dark:text-gray-400">Happy Clients</p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 text-center">
+              <div
+                id="projectsCounter"
+                class="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                0+
+              </div>
+              <p class="text-gray-600 dark:text-gray-400">Projects Done</p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 text-center">
+              <div
+                class="text-3xl font-bold text-gray-900 dark:text-white mb-2">24/7</div>
+              <p class="text-gray-600 dark:text-gray-400">Support</p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 text-center">
+              <div
+                class="text-3xl font-bold text-gray-900 dark:text-white mb-2">100%</div>
+              <p class="text-gray-600 dark:text-gray-400">Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us -->
+    <section class="bg-blue-50 dark:bg-gray-900" id="about">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            About KaviWebdesign
+          </h1>
+          <p
+            class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
+            We combine web design, digital marketing, and AI to deliver
+            innovative digital solutions that help businesses thrive in the
+            digital age.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+            <div class="text-primary text-4xl mb-4">
+              <img src="img/light/Webdesign-Dark.svg" alt class="w-24 h-24 mx-auto dark:hidden" />
+              <img src="img/dark/Webdesign-Light.svg" alt class="w-24 h-24 mx-auto hidden dark:block" />
+            </div>
+            <h2
+              class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Web
+              Design</h2>
+            <p class="text-gray-600 dark:text-gray-400">
+              Custom websites that convert visitors into customers and
+              customers into loyal fans
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+            <div class="text-primary text-4xl mb-4">
+              <img
+                src="img/light/Digital-Marketing-Dark.svg"
+                alt
+                class="w-28 h-28 mx-auto dark:hidden" />
+              <img
+                src="img/dark/Digital-Marketing-Light.svg"
+                alt
+                class="w-28 h-28 mx-auto hidden dark:block" />
+            </div>
+            <h2
+              class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Digital
+              Marketing</h2>
+            <p class="text-gray-600 dark:text-gray-400">
+              Strategic campaigns that drive results and spreads awareness
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+            <div class="text-primary text-4xl mb-4">
+              <img src="img/light/Chatbot-Dark.svg" alt class="w-24 h-24 mx-auto dark:hidden" />
+              <img src="img/dark/Chatbot-Light.svg" alt class="w-24 h-24 mx-auto hidden dark:block" />
+            </div>
+            <h2
+              class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Chatbot
+              Creation</h2>
+            <p class="text-gray-600 dark:text-gray-400">
+              AI-powered chatbots for better customer engagement and support
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a
+            href="https://drive.google.com/file/d/1AmqvmA2ZVaK5ZDrJSLfk1I3dtB32uZeV/view"
+            target="_blank"
+            class="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-secondary transition-colors">
+            Download Our Guide
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+
+    <section id="team" class="bg-gray-50 dark:bg-gray-900">
+      <!-- Team Container -->
+      <div class="container mx-auto px-6 pt-24 pb-24">
+        <h1
+          class="text-center text-4xl font-bold uppercase tracking-wide pb-8 text-gray-900 dark:text-white">
+          Our Team
+        </h1>
+
+        <!-- Boxes Container -->
+        <div
+          class="relative flex flex-col w-full space-y-6 md:flex-row md:space-y-0 md:space-x-12">
+          <!-- Box 1 -->
+          <div
+            class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-gray-800 md:w-1/3 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <p
+              class="text-sm leading-5 md:text-lg text-gray-700 dark:text-gray-300">
+              M. Ishank Reddy is a dedicated Software Engineer with a passion
+              for coding, problem-solving, and delivering efficient, scalable
+              solutions in technology-driven environments.
+            </p>
+
+            <!-- Customer Info -->
+            <div class="flex space-x-4">
+              <img src="img/Ishank.jpg" alt class="w-10 h-10 rounded-full" />
+              <div>
+                <h5
+                  class="text-sm font-semibold text-gray-900 dark:text-white">M.
+                  Ishank Reddy</h5>
+                <p
+                  class="text-xs font-extralight text-gray-600 dark:text-gray-400">Software
+                  Engineer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 2 -->
+          <div
+            class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-gray-800 md:w-1/3 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <p
+              class="text-sm leading-5 md:text-lg text-gray-700 dark:text-gray-300">
+              M. Bhavik Reddy is a skilled Cyber Security professional, focused
+              on safeguarding digital environments through advanced threat
+              analysis, risk management, and security protocols.
+            </p>
+
+            <!-- Customer Info -->
+            <div class="flex space-x-4">
+              <img src="img/Bhavik.jpg" alt class="w-10 h-10 rounded-full" />
+              <div>
+                <h5
+                  class="text-sm font-semibold text-gray-900 dark:text-white">M.
+                  Bhavik Reddy</h5>
+                <p
+                  class="text-xs font-extralight text-gray-600 dark:text-gray-400">Cyber
+                  Security</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 3 -->
+          <div
+            class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-gray-800 md:w-1/3 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <p
+              class="text-sm leading-5 md:text-lg text-gray-700 dark:text-gray-300">
+              M. Kavitha Reddy is a talented Digital Marketing Expert,
+              specializing in online strategies, SEO, social media, and driving
+              brand growth through digital channels.
+            </p>
+
+            <!-- Customer Info -->
+            <div class="flex space-x-4">
+              <img
+                src="img/kavitha.jpg"
+                alt
+                class="w-10 h-10 rounded-full" />
+              <div>
+                <h5
+                  class="text-sm font-semibold text-gray-900 dark:text-white">M.
+                  Kavitha Reddy</h5>
+                <p
+                  class="text-xs font-extralight text-gray-600 dark:text-gray-400">Digital
+                  Marketing Expert</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+
+    <section id="pricing" class="bg-gray-50 dark:bg-gray-900 pb-10 w-full">
+      <h1
+        class="text-center text-gray-900 dark:text-white text-4xl font-bold uppercase tracking-wide pt-10 pb-10">
+        Pricing
+      </h1>
+
+      <!-- Pricing Container -->
+      <div class="flex items-center justify-center pb-10">
+        <!-- Inner Container -->
+        <div
+          class="flex flex-col my-6 space-y-6 md:space-y-0 md:space-x-6 md:flex-row md:my-0">
+          <!-- Col 1 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl text-black dark:text-white shadow-lg transform transition-all duration-300 hover:scale-105">
+            <!-- Upper Container -->
+            <div class="p-8 mx-3 mt-3 rounded-t-xl bg-white dark:bg-gray-800">
+              <div
+                class="text-center uppercase text-gray-900 dark:text-white">Web
+                Design</div>
+              <h2
+                class="mt-10 font-serif text-2xl text-center text-gray-900 dark:text-white">
+                500$/per one website
+              </h2>
+              <h3 class="mt-2 text-center text-gray-600 dark:text-gray-400">No
+                bargaining</h3>
+              <div class="flex justify-center">
+                <a href="#"
+                  class="inline-block px-10 py-3 my-6 text-center border border-violet-600 dark:border-violet-400 text-violet-600 dark:text-violet-400 rounded-lg duration-200 hover:bg-violet-600 dark:hover:bg-violet-500 hover:text-white dark:hover:text-white bg-transparent">
+                  Purchase
+                </a>
+              </div>
+            </div>
+
+            <!-- Border -->
+            <div class="border-t border-gray-200 dark:border-purple-500"></div>
+
+            <!-- Lower Container -->
+            <div class="p-8 mx-3 mb-3 rounded-b-xl bg-white dark:bg-gray-800">
+              <!-- List Container -->
+              <div class="flex flex-col space-y-2">
+                <!-- List Items -->
+                <div class="flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-violet-600 dark:text-violet-400"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                  </svg>
+                  <span
+                    class="text-sm ml-1 text-gray-800 dark:text-gray-200">Fully
+                    Developed Website</span>
+                </div>
+
+                <div class="flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-violet-600 dark:text-violet-400"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                  </svg>
+                  <span
+                    class="text-sm ml-1 text-gray-800 dark:text-gray-200">Has
+                    Front End + Backend</span>
+                </div>
+
+                <div class="flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-violet-600 dark:text-violet-400"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                  </svg>
+                  <span
+                    class="text-sm ml-1 text-gray-800 dark:text-gray-200">Fully
+                    Responsive Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl text-black dark:text-white shadow-lg transform transition-all duration-300 hover:scale-105">
+            <!-- Upper Container -->
+            <div class="p-8 mx-3 mt-3 rounded-t-xl bg-white dark:bg-gray-800">
+              <div
+                class="text-center uppercase text-gray-900 dark:text-white">Digital
+                Marketing</div>
+              <h2
+                class="mt-10 font-serif text-2xl text-center text-gray-900 dark:text-white">
+                200$/per one month
+              </h2>
+              <h3 class="mt-2 text-center text-gray-600 dark:text-gray-400">No
+                bargaining</h3>
+              <div class="flex justify-center">
+                <a href="#"
+                  class="inline-block px-10 py-3 my-6 text-center border border-violet-600 dark:border-violet-400 text-violet-600 dark:text-violet-400 rounded-lg duration-200 hover:bg-violet-600 dark:hover:bg-violet-500 hover:text-white dark:hover:text-white bg-transparent">
+                  Purchase
+                </a>
+              </div>
+            </div>
+
+            <!-- Border -->
+            <div class="border-t text-gray-800 dark:border-purple-500"></div>
+
+            <!-- Lower Container -->
+            <div class="p-8 mx-3 mb-3 rounded-b-xl bg-white dark:bg-gray-800">
+              <!-- List Container -->
+              <div class="flex flex-col space-y-2">
+                <!-- List Items -->
+                <div class="flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-violet-600 dark:text-violet-400"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                  </svg>
+                  <span
+                    class="text-sm ml-1 text-gray-800 dark:text-gray-200">Accounts
+                    on all social media</span>
+                </div>
+
+                <div class="flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-violet-600 dark:text-violet-400"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                  </svg>
+                  <span
+                    class="text-sm ml-1 text-gray-800 dark:text-gray-200">One
+                    video on youtube</span>
+                </div>
+
+                <div class="flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-violet-600 dark:text-violet-400"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                  </svg>
+                  <span
+                    class="text-sm ml-1 text-gray-800 dark:text-gray-200">Ads on
+                    all social media</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 3 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl text-black dark:text-white shadow-lg transform transition-all duration-300 hover:scale-105">
+            <!-- Upper Container -->
+            <div class="p-8 mx-3 mt-3 rounded-t-xl bg-white dark:bg-gray-800">
+              <div
+                class="text-center uppercase text-gray-900 dark:text-white">Artificial
+                Intelligence</div>
+              <h2
+                class="mt-10 font-serif text-2xl text-center text-gray-900 dark:text-white">
+                750$/per one AI
+              </h2>
+              <h3 class="mt-2 text-center text-gray-600 dark:text-gray-400">No
+                bargaining</h3>
+              <div class="flex justify-center">
+                <a href="#"
+                  class="inline-block px-10 py-3 my-6 text-center border border-violet-600 dark:border-violet-400 text-violet-600 dark:text-violet-400 rounded-lg duration-200 hover:bg-violet-600 dark:hover:bg-violet-500 hover:text-white dark:hover:text-white bg-transparent">
+                  Purchase
+                </a>
+              </div>
+            </div>
+
+            <!-- Border -->
+            <div class="border-t border-gray-200 dark:border-purple-500"></div>
+
+            <!-- Lower Container -->
+            <div class="p-8 mx-3 mb-3 rounded-b-xl bg-white dark:bg-gray-800">
+              <!-- List Container -->
+              <div class="flex flex-col space-y-2">
+                <!-- List Items -->
+                <div class="flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-violet-600 dark:text-violet-400"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                  </svg>
+                  <span
+                    class="text-sm ml-1 text-gray-800 dark:text-gray-200">Fully
+                    developed A.I without any error</span>
+                </div>
+
+                <div class="flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-violet-600 dark:text-violet-400"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                  </svg>
+                  <span
+                    class="text-sm ml-1 text-gray-800 dark:text-gray-200">Adding
+                    Chatbots to Website</span>
+                </div>
+
+                <div class="flex justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-violet-600 dark:text-violet-400"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                  </svg>
+                  <span
+                    class="text-sm ml-1 text-gray-800 dark:text-gray-200">Developing
+                    an A.I with Deep Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonial" class="bg-gray-50 dark:bg-gray-900">
+      <!-- Global Container -->
+      <div class="container mx-auto max-w-7xl p-2 md:p-10">
+        <!-- Title -->
+        <h1 class="text-center text-4xl font-bold uppercase tracking-wide pb-8 text-gray-900 dark:text-white">
+          Don't take our word for it
+        </h1>
+
+        <!-- Grid Container -->
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-4 md:grid-rows-2">
+          <!-- Box 1 -->
+          <div class="relative p-10 rounded-xl bg-purple-700 dark:bg-purple-800 md:col-span-2">
+            <!-- Quotes Image -->
+            <img src="img/bg-pattern-quotation.svg" alt="" 
+                 class="absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150 opacity-40" />
+            <!-- Box Header -->
+            <div class="flex z-10 space-x-4">
+              <img src="img/image-sonya.jpg" alt="" class="w-10 h-10 rounded-full ring-2 ring-purple-300" />
+              <div class="text-sm">
+                <h4 class="text-white font-semibold">Sonya Chester</h4>
+                <p class="text-purple-200">Web Design</p>
+              </div>
+            </div>
+
+            <!-- Large Text -->
+            <p class="relative z-10 mt-6 text-xl text-white font-semibold">
+              My Incredible Experience Working with the Talented Team at Kavi Web Designs
+            </p>
+
+            <!-- Small Text -->
+            <p class="mt-6 text-purple-100">
+              "Working with Kavi Web Designs was an absolute pleasure! They took the time to understand my vision and brought it to life with a website that exceeded my expectations. The design is modern, user-friendly, and perfectly reflects my brand. Their attention to detail and commitment to delivering quality work truly stood out."
+            </p>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="p-10 rounded-xl bg-gray-600 dark:bg-gray-700">
+            <!-- Box Header -->
+            <div class="flex space-x-4">
+              <img src="img/image-phillis.jpg" alt="" class="w-10 h-10 rounded-full ring-2 ring-purple-300" />
+              <div class="text-sm">
+                <h4 class="text-white font-semibold">Phillis Elea</h4>
+                <p class="text-gray-300">Digital Marketing</p>
+              </div>
+            </div>
+
+            <!-- Large Text -->
+            <p class="mt-6 text-xl text-white font-semibold">
+              Transforming My Business with Exceptional Digital Marketing
+            </p>
+
+            <!-- Small Text -->
+            <p class="mt-6 text-gray-200">
+              "Their expertise in digital marketing helped me build a strong online presence and reach a wider audience than I ever thought possible. The results have been phenomenal!"
+            </p>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="hidden p-10 rounded-xl bg-white dark:bg-gray-800 md:block md:row-span-2">
+            <!-- Box Header -->
+            <div class="flex space-x-4">
+              <img src="img/image-rufus.jpg" alt="" class="w-10 h-10 rounded-full ring-2 ring-purple-300" />
+              <div class="text-sm">
+                <h4 class="text-gray-900 dark:text-white font-semibold">Rufus Demetria</h4>
+                <p class="text-gray-600 dark:text-gray-400">AI Chatbot Integration</p>
+              </div>
+            </div>
+
+            <!-- Large Text -->
+            <p class="mt-6 text-xl text-gray-900 dark:text-white font-semibold">
+              Enhancing Customer Engagement with AI Chatbot Integration
+            </p>
+
+            <!-- Small Text -->
+            <p class="mt-6 text-gray-600 dark:text-gray-400">
+              "I had an amazing experience working with Kavi Web Designs to integrate an AI chatbot. Their team demonstrated exceptional technical knowledge and creativity, ensuring the chatbot was functional and tailored to my business needs. The integration improved customer engagement and streamlined communication."
+            </p>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="p-10 rounded-xl bg-white dark:bg-gray-800">
+            <!-- Box Header -->
+            <div class="flex space-x-4">
+              <img src="img/image-ste.jpg" alt="" class="w-10 h-10 rounded-full ring-2 ring-purple-300" />
+              <div class="text-sm">
+                <h4 class="text-gray-900 dark:text-white font-semibold">Ste Lawrence</h4>
+                <p class="text-gray-600 dark:text-gray-400">Web Design</p>
+              </div>
+            </div>
+
+            <!-- Large Text -->
+            <p class="mt-6 text-xl text-gray-900 dark:text-white font-semibold">
+              A Perfectly Designed Website by Kavi Web Designs
+            </p>
+
+            <!-- Small Text -->
+            <p class="mt-6 text-gray-600 dark:text-gray-400">
+              "Kavi Web Designs created a sleek, modern website—professional and highly recommended!"
+            </p>
+          </div>
+
+          <!-- Box 5 -->
+          <div class="p-10 rounded-xl bg-gray-900 dark:bg-gray-700 md:col-span-2">
+            <!-- Box Header -->
+            <div class="flex space-x-4">
+              <img src="img/image-patrick.jpg" alt="" class="w-10 h-10 rounded-full ring-2 ring-purple-300" />
+              <div class="text-sm">
+                <h4 class="text-white font-semibold">Patrick Abrams</h4>
+                <p class="text-gray-400">Verified Graduate</p>
+              </div>
+            </div>
+
+            <!-- Large Text -->
+            <p class="mt-6 text-xl text-white font-semibold">
+              Seamless AI Chatbot Integration with Kavi Web Designs
+            </p>
+
+            <!-- Small Text -->
+            <p class="mt-6 text-gray-300">
+              "Working with Kavi Web Designs for AI chatbot integration was a fantastic experience. Their team took the time to understand my business needs and tailored the chatbot to improve customer interactions. The integration was smooth, and the solution has made communication more efficient."
+            </p>
+          </div>
+
+          <!-- Box 6 (Mobile Only) -->
+          <div class="p-10 rounded-xl bg-white dark:bg-gray-800 md:hidden">
+            <!-- Box Header -->
+            <div class="flex space-x-4">
+              <img src="img/image-rufus.jpg" alt="" class="w-10 h-10 rounded-full ring-2 ring-purple-300" />
+              <div class="text-sm">
+                <h4 class="text-gray-900 dark:text-white font-semibold">Rufus Demetria</h4>
+                <p class="text-gray-600 dark:text-gray-400">AI Chatbot Integration</p>
+              </div>
+            </div>
+
+            <!-- Large Text -->
+            <p class="mt-6 text-xl text-gray-900 dark:text-white font-semibold">
+              A Seamless AI Chatbot Integration Experience
+            </p>
+
+            <!-- Small Text -->
+            <p class="mt-6 text-gray-600 dark:text-gray-400">
+              "I had an amazing experience working with Kavi Web Designs to integrate an AI chatbot. Their team demonstrated exceptional technical knowledge and creativity, ensuring the chatbot was perfectly tailored to my business needs."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+
+    <footer class="bg-white dark:bg-gray-800 w-full" id="contact">
+      <!-- Container -->
+
+      <div class="container max-w-6xl py-10 mx-auto">
+        <!-- Footer Flex Container -->
+
+        <div
+          class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start">
+          <!-- Menu & Logo Container -->
+
+          <div
+            class="flex flex-col items-center space-y-8 md:items-start md:space-y-4 pl-3">
+            <!-- Logo -->
+
+            <div class="h-8">
+              <img src="img/logo.svg" alt class="w-44 md:ml-3" />
+            </div>
+
+            <!-- Menu Container -->
+
+            <div
+              class="flex flex-col items-center space-y-4 font-bold text-gray-800 dark:text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
+              <!-- Item 1 -->
+
+              <div class="h-10 group">
+                <a href="#hero">Home</a>
+
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-black dark:group-hover:border-white"></div>
+              </div>
+
+              <!-- Item 2 -->
+
+              <div class="h-10 group">
+                <a href="#about">About</a>
+
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-black dark:group-hover:border-white"></div>
+              </div>
+
+              <!-- Item 3 -->
+
+              <div class="h-10 group">
+                <a href="#team">Team</a>
+
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-black"></div>
+              </div>
+
+              <!-- Item 4 -->
+
+              <div class="h-10 group">
+                <a href="#pricing">Pricing</a>
+
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-black dark:group-hover:border-white"></div>
+              </div>
+
+              <!-- Item 5 -->
+
+              <div class="h-10 group">
+                <a href="#testimonial">Testimonials</a>
+
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-black dark:group-hover:border-white"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social & Copy Container -->
+
+          <div
+            class="flex flex-col items-start justify-between space-y-4 text-gray-500 dark:text-white">
+            <!-- Copy -->
+
+            <div class="font-bold">
+              <p>&copy; 2024 KaviWebDesigns. All Rights Reserved</p>
+            </div>
+
+            <div class="flex flex-row space-x-4 mx-auto md:mx-0">
+              <a
+                href="https://www.facebook.com/people/Kaviwebdesigns/61560409976244/?_rdr"
+                target="_blank"><img src="img/light/Facebook-Dark.svg" alt
+                  class="dark:hidden" />
+                <img src="img/dark/Facebook-Light.svg" alt
+                  class="hidden dark:block" /></a>
+
+              <a
+                href="https://www.pinterest.com/kaviwebdesigns/"
+                target="_blank">
+                <img src="img/light/Pinterest-Dark.svg" alt
+                  class="dark:hidden" />
+                <img src="img/dark/Pinterest-Light.svg" alt
+                  class="hidden dark:block" /></a>
+
+              <a href="https://www.youtube.com/channel/UCGvNdo-r87Q12zW2MK01BFw/videos" target="_blank">
+                <img src="img/light/Youtube-Dark.svg" class="dark:hidden" alt />
+                <img src="img/dark/Youtube-Light.svg" class="hidden dark:block" alt />
+              </a>
+
+              <a
+                href="https://www.instagram.com/kaviwebdesings/"
+                target="_blank"><img src="img/light/Instagram-Dark.svg" alt
+                  class="dark:hidden" />
+                <img src="img/dark/Instagram-Light.svg" alt
+                  class="hidden dark:block" /></a>
+            </div>
+
+            <h2 class="mx-auto md:mx-0">Email: kaviwebdesigns@gmail.com</h2>
+
+            <h2 class="mx-auto md:mx-0">Phone: +65 8137 1058</h2>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
