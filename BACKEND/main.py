@@ -25,7 +25,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Define request model
+# Define request modelgit 
 class ChatRequest(BaseModel):
     message: str
 
