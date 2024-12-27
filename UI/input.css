@@ -116,3 +116,46 @@ body {
   height: calc(100vh - 70px);
   z-index: 999;
 }
+
+/* Chatbot animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.chatbot-window-active {
+  display: flex !important;
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+.chatbot-btn {
+  transition: transform 0.3s ease;
+}
+
+.chatbot-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Custom scrollbar for chat messages */
+#chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+#chat-messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.dark #chat-messages::-webkit-scrollbar-thumb {
+  background: #475569;
+}

@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 .env
+__pycache__
+data
 
 # Editor directories and files
 .vscode/*
@@ -23,3 +25,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*conda-meta
+*etc
+*include
+*lib
+*man
+*share
+*ssl
+*bin
+*.condatmp
+*duckdb_build
