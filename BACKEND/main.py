@@ -29,7 +29,8 @@ app.add_middleware(
 class ChatRequest(BaseModel):
     message: str
 
-OPENAI_API_KEY = "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"
+load_dotenv()
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 if not OPENAI_API_KEY:
     raise ValueError("No OpenAI API key found in environment variables")
 
